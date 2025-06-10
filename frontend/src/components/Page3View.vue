@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <v-card
+        style="border: black solid 2px"
         color="rgba(245,245,245)"
     >
       <v-container>

@@ -71,8 +71,20 @@ export default {
   border-radius: 20px;
 }
 
+.align {
+  align-items: center;
+}
+
+.img0 {
+  max-width: 700px;
+}
+
 .img1 {
   max-width: 600px;
+}
+
+.img1_5 {
+  max-width: 500px;
 }
 
 .img2 {

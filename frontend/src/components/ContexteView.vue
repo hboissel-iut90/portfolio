@@ -1,6 +1,9 @@
 <template>
   <v-container>
-    <v-card color="rgba(245,245,245)">
+    <v-card
+        style="border: black solid 2px"
+        color="rgba(245,245,245)"
+    >
       <v-container>
         <v-container>
           <h1>Contexte</h1>
