@@ -1,0 +1,62 @@
+<template>
+  <v-container>
+    <v-card
+        color="rgba(245,245,245)"
+    >
+      <v-container>
+        <h1>Protocole de rootage de téléphone</h1>
+      </v-container>
+      <v-container
+          class="spaceBtw">
+        <v-card-text class="txt">
+          La figure 1 présente les différentes étapes que je devais réaliser dans les débuts de mon stage.
+          J'ai posé le problème sur un tableau.
+        </v-card-text>
+        <v-card-text class="dirCol legImg">
+          <img class="img2" alt="Image not found" src="@/assets/logo.png"/>
+          Figure 1 : Liste des étapes de la mise à niveau + schémas des problèmes rencontrés pendant la réalisation
+        </v-card-text>
+      </v-container>
+      <v-container
+        class="spaceBtw"
+      >
+
+      </v-container>
+      <v-container
+          class="spaceBtw">
+        <v-btn
+            @click="goTo('/2')"
+            dark
+        >
+          Page 2
+        </v-btn>
+        <v-card-text class="style2" style="margin-right: 90px">3</v-card-text>
+      </v-container>
+    </v-card>
+  </v-container>
+</template>
+
+<script>
+
+import {mapActions} from "vuex";
+
+export default {
+  name: 'Page3View',
+  methods: {
+    ...mapActions(['keepPage', 'verifyPage']),
+    goTo(route) {
+      if (this.$route.fullPath !== route) {
+        this.$router.push(route);
+      }
+    }
+  },
+  async mounted() {
+    await this.keepPage(this.$route.path);
+    await this.verifyPage();
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
