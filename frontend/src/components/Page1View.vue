@@ -127,7 +127,7 @@
           <p class="legImg">Figure 4 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
         </v-card-text>
       </v-container>
-      <v-container>
+      <v-container class="txt">
         <v-card-text class="txt">
           <p>
             La compréhension de ce que représentent ces axes était la difficulté de cette tâche.
@@ -155,11 +155,11 @@
         </v-card-text>
         <v-container class="spaceBtw">
           <v-card-text>
-            <img class="img5 borderImg" alt="Image not found" src="@/assets/fichiers_tests.png"/>
+            <img class="img4 borderImg" alt="Image not found" src="@/assets/fichiers_tests.png"/>
             <p class="legImg">Figure 5 : Capture d'écran des fichiers de tests pour les axes d'orientation</p>
           </v-card-text>
           <v-card-text>
-            <img class="img3 borderImg" alt="Image not found" src="@/assets/axes_orient_tab.png"/>
+            <img class="img2 borderImg" alt="Image not found" src="@/assets/axes_orient_tab.png"/>
             <p class="legImg">Figure 6 : Photo rognée du changement des axes d'orientation</p>
           </v-card-text>
         </v-container>
