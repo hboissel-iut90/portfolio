@@ -101,17 +101,20 @@
             <br>
           </v-container>
           <p>
-            Dans l’ordre, les premières données que j’ai vérifié sont les axes d’accélération et les vitesses de rotation.
+            Dans l’ordre, les premières données que j’ai vérifié sont les axes d’accélération.
             En tout premier plan, ses données paraissaient cohérentes entre le S8 et le S20 (j’y reviendrai dessus plus tard).
           </p>
           <p>
-            Puis, les cinq prochaines données dépendent du capteur GPS,
+            Puis les données suivantes sont les vitesses de rotation qui coïncident avec les données du S8.
+          </p>
+          <p>
+            Ensuite, les cinq prochaines données dépendent du capteur GPS,
             capteur qui dépend de la qualité du réseau mais le réseau au laboratoire étant trop mauvaise,
             des tests sur ces données se sont faits plus tard.
           </p>
           <p>
             Il ne reste alors que les axes d’orientation et les axes de gravité.
-            Les axes de gravité dépendant du capteur des axes d’accélération, cela me donne les mêmes résultats mais en nombre de G.
+            Les axes de gravité dépendants du capteur des axes d’accélération, cela me donne les mêmes résultats mais en nombre de g (l'unité).
             Je me suis alors concentré sur les axes d’orientation.
           </p>
         </v-card-text>
@@ -143,10 +146,10 @@
             et roulis pour tourner en tonneau sur la droite ou la gauche.
           </p>
           <p>
-            Pour un téléphone, on peut apercevoir sur la figure 4 que le téléphone est en position couché,
-            écran vers le plafond, que le lacet se nomme azimuth, le tangage se nomme pitch et le roulis se nomme roll.
-            Pour capturer les données dans l’application comme le montre la figure 3, on utilise une fonction qui prend en compte
-            le capteur de gravité et le capteur de champ magnétique terrestre.
+            Pour un téléphone, on peut apercevoir sur la figure 4 que le téléphone est en position couché, écran vers le plafond,
+            que le lacet se nomme azimuth, le tangage : pitch, et le roulis : roll. Pour capturer les données dans l’application comme le montre la figure 3,
+            on utilise une fonction qui prend en compte le capteur de gravité et le capteur de champ magnétique terrestre pour en faire une matrice de rotation
+            et avoir nos axes d’orientation.
           </p>
         </v-card-text>
       </v-container>
@@ -155,6 +158,8 @@
         <v-card-text class="txt">
           <p>
             Pour comprendre et arriver à un résultat concluant, il a fallu environ treize tests physiques où le téléphone enregistre chaque axe pour chaque test.
+          </p>
+          <p>
             Pour avoir les bonnes données d’orientation, la figure 5 démontre que les axes Y et Z de gravité ont dû être inversés
             pour la fonction de matrice. En effet, en faisant mes tests je me suis rendu compte que le tangage et le roulis étaient inversés,
             le problème étant que le roulis et le tangage n’ont pas les mêmes unités donc je ne pouvais pas seulement inverser les deux axes d’orientation.
