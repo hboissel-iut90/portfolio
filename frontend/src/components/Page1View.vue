@@ -157,12 +157,12 @@
           class="spaceBtw">
         <v-card-text class="txt">
           <p>
-            Pour comprendre et arriver à un résultat concluant, il a fallu environ treize tests physiques où le téléphone enregistre chaque axe pour chaque test.
-          </p>
-          <p>
             Pour avoir les bonnes données d’orientation, la figure 5 démontre que les axes Y et Z de gravité ont dû être inversés
             pour la fonction de matrice. En effet, en faisant mes tests je me suis rendu compte que le tangage et le roulis étaient inversés,
             le problème étant que le roulis et le tangage n’ont pas les mêmes unités donc je ne pouvais pas seulement inverser les deux axes d’orientation.
+          </p>
+          <p>
+            Pour comprendre et arriver à un résultat concluant, il a fallu environ treize tests physiques où le téléphone enregistre chaque axe pour chaque test.
           </p>
         </v-card-text>
         <v-container class="spaceBtw">
