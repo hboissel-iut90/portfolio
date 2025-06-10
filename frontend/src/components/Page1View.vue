@@ -120,11 +120,17 @@
           class="spaceBtw align">
         <v-card-text class="dirCol">
           <img class="img1_5 borderImg"  alt="Image not found" src="@/assets/screen_code_orient.png"/>
-          <p class="legImg">Figure 3 : Capture d'écran </p>
+          <p class="legImg">Figure 3 : Capture d'écran des fonctions nécessaires aux axes d'orientation </p>
         </v-card-text>
         <v-card-text class="dirCol">
           <img class="img2 borderImg" alt="Image not found" src="@/assets/orientation_axis.png"/>
-          <p class="legImg">Figure 4 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
+          <p class="legImg">
+            Figure 4 : Illustration des axes d'orientation d'un téléphone
+            <br>
+          <a href="https://www.mathworks.com/help/simulink/supportpkg/android_ref/orientation.html" class="txt" style="color: black; font-size: small">
+            (Tiré du site mathworks.com)
+          </a>
+          </p>
         </v-card-text>
       </v-container>
       <v-container class="txt">
@@ -148,19 +154,16 @@
           class="spaceBtw">
         <v-card-text class="txt">
           <p>
-            Pour comprendre et arriver à un résultat concluant, il a fallu environ treize tests physiques
-            où le téléphone est manipulé sur les trois axes comme illustrer sur la figure 5. Pour avoir les bonnes données,
-            j’ai dû inverser les axes Y et Z de gravité comme le démontre la figure 6.
+            Pour comprendre et arriver à un résultat concluant, il a fallu environ treize tests physiques où le téléphone enregistre chaque axe pour chaque test.
+            Pour avoir les bonnes données d’orientation, la figure 5 démontre que les axes Y et Z de gravité ont dû être inversés
+            pour la fonction de matrice. En effet, en faisant mes tests je me suis rendu compte que le tangage et le roulis étaient inversés,
+            le problème étant que le roulis et le tangage n’ont pas les mêmes unités donc je ne pouvais pas seulement inverser les deux axes d’orientation.
           </p>
         </v-card-text>
         <v-container class="spaceBtw">
           <v-card-text>
-            <img class="img4 borderImg" alt="Image not found" src="@/assets/fichiers_tests.png"/>
-            <p class="legImg">Figure 5 : Capture d'écran des fichiers de tests pour les axes d'orientation</p>
-          </v-card-text>
-          <v-card-text>
             <img class="img2 borderImg" alt="Image not found" src="@/assets/axes_orient_tab.png"/>
-            <p class="legImg">Figure 6 : Photo rognée du changement des axes d'orientation</p>
+            <p class="legImg">Figure 5 : Photo rognée du changement des axes d'orientation</p>
           </v-card-text>
         </v-container>
       </v-container>
