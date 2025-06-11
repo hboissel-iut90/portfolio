@@ -18,6 +18,14 @@
     >
       Contexte
     </v-btn>
+
+    <!-- <v-card-text class="spaceEvl" style="margin-top: 70px">
+      <img class="logos2" alt="Image not found" src="@/assets/logo_iut3.png">
+      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
+      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
+      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
+      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
+    </v-card-text>-->
   </v-container>
 </template>
 
@@ -75,42 +83,21 @@ export default {
   align-items: center;
 }
 
-.img0 {
-  max-width: 700px;
-}
-
-.img1 {
-  max-width: 600px;
-}
-
-.img1_5 {
-  max-width: 500px;
-}
-
-.img2 {
-  max-width: 400px;
-}
-
-.img3 {
-  max-width: 300px;
-}
-
-.img4 {
-  max-width: 200px;
-}
-
-.img5 {
-  max-width: 100px;
-}
-
-.imgDouble{
-  max-height: 250px;
+.img {
+  max-width: 90%;
 }
 
 .logos {
   max-width: 400px;
   max-height: 80px;
   margin-left: 10px;
+  border: solid darkslategray 0px;
+  border-radius: 0px;
+}
+
+.logos2 {
+  max-width: 100px;
+  max-height: 80px;
   border: solid darkslategray 0px;
   border-radius: 0px;
 }
