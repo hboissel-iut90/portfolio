@@ -13,7 +13,7 @@ export default new Vuex.Store({
     async verifyPage(){
       let page = localStorage.getItem("Page")
       console.log(this.$route.fullPath + " = " + page)
-      if(!this.$route || this.$route.fullPath == page) {
+      if(!this.$route || this.$route.fullPath === page) {
         return true;
       } else {
         await this.$router.push(page);
