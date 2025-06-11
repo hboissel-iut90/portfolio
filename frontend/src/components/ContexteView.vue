@@ -31,12 +31,14 @@
           </v-card-text>
           <h4> Mon stage a donc était découpé en plusieurs missions :</h4>
           <v-container class="txt" style=" padding-inline: 60px">
-            <li><h4>mise à niveau de deux applications
-              pour les passer d'un téléphone Samsung S8 à un téléphone Samsung S20;</h4></li>
-            <br>
-            <li><h4>ajout de nouvelles données dans les deux applications; </h4></li>
-            <br>
-            <li><h4>modification du protocole de rootage des téléphones.</h4></li>
+            <ul>
+              <li><h4>mise à niveau de deux applications
+                pour les passer d'un téléphone Samsung S8 à un téléphone Samsung S20;</h4></li>
+              <br>
+              <li><h4>ajout de nouvelles données dans les deux applications; </h4></li>
+              <br>
+              <li><h4>modification du protocole de rootage des téléphones.</h4></li>
+            </ul>
           </v-container>
         </v-container>
       </v-container>

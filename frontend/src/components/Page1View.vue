@@ -20,6 +20,9 @@
           </p>
         </v-card-text>
       </v-container>
+      <v-container>
+        <h2>Démarrage de l'application sur S20</h2>
+      </v-container>
       <v-container
           class="spaceBtw">
         <v-card-text class=" dirCol legImg">
@@ -37,6 +40,7 @@
       <v-container
           class="spaceBtw">
         <v-card-text class="txt">
+          <h3>pkze</h3>
           <p>
             La figure 1 présente 6 étapes que je devais réaliser pour la mise à niveau.
             Les étapes sur la figure 1 ont été écrites au début de mon stage, il y a évidemment d’autres étapes.
@@ -164,6 +168,11 @@
           </v-card-text>
         </v-container>
       </v-container>
+      <v-container>
+        <v-card-text>
+
+        </v-card-text>
+      </v-container>
       <v-container
           class="spaceBtw align">
         <v-card-text class="dirCol">
@@ -175,6 +184,9 @@
           <img class="img0 borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
           <p class="legImg">Figure 2 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
         </v-card-text>
+      </v-container>
+      <v-container>
+        <h2>Tests en conditions réelles</h2>
       </v-container>
       <v-container
           class="spaceBtw">
