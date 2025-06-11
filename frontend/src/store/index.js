@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   mutations: {
     setPage(data){
+      console.log(data)
       localStorage.setItem("Page", data)
     },
   },
