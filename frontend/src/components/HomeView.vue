@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import {mapActions} from "vuex";
+// import {mapActions} from "vuex";
 
 export default {
   name: 'HomeView',
   methods: {
-    ...mapActions(['keepPage']),
+    // ...mapActions(['keepPage']),
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);

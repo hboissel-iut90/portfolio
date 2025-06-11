@@ -5,11 +5,15 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   mutations: {
+    /*
     setPage(data){
       localStorage.setItem("Page", data)
     },
+
+     */
   },
   actions: {
+    /*
     async verifyPage(){
       let page = localStorage.getItem("Page")
       console.log(this.$route.fullPath + " = " + page)
@@ -22,5 +26,7 @@ export default new Vuex.Store({
     keepPage({commit}, page){
       commit('setPage', page)
     }
+
+     */
   }
 })

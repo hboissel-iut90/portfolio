@@ -194,22 +194,25 @@
 
 <script>
 
-import {mapActions} from "vuex";
+//import {mapActions} from "vuex";
 
 export default {
   name: 'Page1View',
   methods: {
-    ...mapActions(['keepPage', 'verifyPage']),
+    //...mapActions(['keepPage', 'verifyPage']),
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
       }
     }
   },
+  /*
   async mounted() {
     await this.keepPage(this.$route.path);
     await this.verifyPage();
   }
+
+   */
 }
 </script>
 
