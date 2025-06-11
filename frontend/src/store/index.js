@@ -6,13 +6,13 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   mutations: {
     setPage(data){
-      console.log(data)
       localStorage.setItem("Page", data)
     },
   },
   actions: {
     async verifyPage(){
       let page = localStorage.getItem("Page")
+      console.log(this.$route.fullPath + " = " + page)
       if(!this.$route || this.$route.fullPath == page) {
         return true;
       } else {
