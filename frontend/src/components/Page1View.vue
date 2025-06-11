@@ -11,9 +11,9 @@
         <v-card-text class="txt">
           <p>
             Cette mission consistait à reprendre deux applications similaires, du nom d’ÉlectroMob et VitaVélo,
-            développées par le laboratoire, pour les rendre compatibles avec un téléphone Samsung S20 et de les ergonomiser.
-            Les applications permettent d’enregistrer différents types de données par ces capteurs intégrés et une vidéo qui montrent le trajet du participant.
-            De ce fait, je devais aussi vérifier l’intégrité des données enregistrées.
+            développées par le laboratoire, pour les rendre compatibles avec un téléphone Samsung S20 (qu’on nommera par la suite S20)
+            et de les ergonomiser.  Les applications permettent d’enregistrer différents types de données par ces capteurs intégrés
+            et une vidéo qui montrent le trajet du participant. De ce fait, je devais aussi vérifier l’intégrité des données enregistrées.
           </p>
           <p>
             Ces applications sont codées en langage de programmation Java/Kotlin avec l'environnement de développement (IDE) Android Studio.
@@ -55,19 +55,9 @@
             pour chaque composant lié au layout (= élément servant de vue à l’application) dans les nouvelles versions d’android.
           </p>
         </v-card-text>
-
       </v-container>
-      <v-container
-          class="spaceBtw align">
-        <v-card-text class="dirCol">
-          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S8.png"/>
-          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S20.png"/>
-          <p class="legImg">Ensemble 2 : Comparaison de deux versions du code de ElectroMob entre S8 et S20</p>
-        </v-card-text>
-        <v-card-text class="dirCol">
-          <img class="img0 borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
-          <p class="legImg">Figure 2 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
-        </v-card-text>
+      <v-container>
+        <h2>Intégrité des données</h2>
       </v-container>
       <v-container>
         <v-card-text class="txt">
@@ -79,26 +69,28 @@
           </p>
           <p>Les données analysées et leurs capteurs : </p>
           <v-container class="txt" style="padding-inline: 60px">
-            <li><h4>l’horodatage avec l’horloge interne du téléphone;</h4></li>
-            <br>
-            <li><h4>les axes d’accélération avec l’accéléromètre;</h4></li>
-            <br>
-            <li><h4>les vitesses de rotations avec le gyroscope;</h4></li>
-            <br>
-            <li><h4>la latitude avec la localisation GPS;</h4></li>
-            <br>
-            <li><h4>la longitude avec la localisation GPS;</h4></li>
-            <br>
-            <li><h4>l’altittude avec la localisation GPS;</h4></li>
-            <br>
-            <li><h4>la boussole avec la localisation GPS;</h4></li>
-            <br>
-            <li><h4>la vitesse GPS avec la localisation GPS;</h4></li>
-            <br>
-            <li><h4>les axes d’orientation, calculés avec les capteurs de gravité et champ magnétique de la Terre;</h4></li>
-            <br>
-            <li><h4>les axes de gravité avec le gravitomètre;</h4></li>
-            <br>
+            <ul>
+              <li><h4>l’horodatage avec l’horloge interne du téléphone;</h4></li>
+              <br>
+              <li><h4>les axes d’accélération avec l’accéléromètre;</h4></li>
+              <br>
+              <li><h4>les vitesses de rotations avec le gyroscope;</h4></li>
+              <br>
+              <li><h4>la latitude avec la localisation GPS;</h4></li>
+              <br>
+              <li><h4>la longitude avec la localisation GPS;</h4></li>
+              <br>
+              <li><h4>l’altittude avec la localisation GPS;</h4></li>
+              <br>
+              <li><h4>la boussole avec la localisation GPS;</h4></li>
+              <br>
+              <li><h4>la vitesse GPS avec la localisation GPS;</h4></li>
+              <br>
+              <li><h4>les axes d’orientation, calculés avec les capteurs de gravité et champ magnétique de la Terre;</h4></li>
+              <br>
+              <li><h4>les axes de gravité avec le gravitomètre;</h4></li>
+              <br>
+            </ul>
           </v-container>
           <p>
             Dans l’ordre, les premières données que j’ai vérifié sont les axes d’accélération.
@@ -171,6 +163,18 @@
             <p class="legImg">Figure 5 : Photo rognée du changement des axes d'orientation</p>
           </v-card-text>
         </v-container>
+      </v-container>
+      <v-container
+          class="spaceBtw align">
+        <v-card-text class="dirCol">
+          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S8.png"/>
+          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S20.png"/>
+          <p class="legImg">Ensemble 2 : Comparaison de deux versions du code de ElectroMob entre S8 et S20</p>
+        </v-card-text>
+        <v-card-text class="dirCol">
+          <img class="img0 borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
+          <p class="legImg">Figure 2 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
+        </v-card-text>
       </v-container>
       <v-container
           class="spaceBtw">
