@@ -188,22 +188,6 @@
           Page 2
         </v-btn>
       </v-container>
-      <v-container
-          class="spaceBtw">
-        <v-btn
-            @click="goTo('/contexte')"
-            dark
-        >
-          Contexte
-        </v-btn>
-        <v-card-text>1</v-card-text>
-        <v-btn
-            @click="goTo('/2')"
-            dark
-        >
-          Page 2
-        </v-btn>
-      </v-container>
     </v-card>
   </v-container>
 </template>
