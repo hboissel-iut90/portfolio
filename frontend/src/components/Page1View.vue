@@ -21,18 +21,18 @@
         </v-card-text>
       </v-container>
       <v-container>
-        <h2>Démarrage de l'application sur S20</h2>
+        <h3>Démarrage de l'application sur S20</h3>
       </v-container>
       <v-container
           class="spaceBtw">
         <v-card-text class=" dirCol legImg">
-          <img class="img2 borderImg" alt="Image not found" src="@/assets/IMG_20250410_163722.jpg"/>
+          <img class="img borderImg" alt="Image not found" src="@/assets/IMG_20250410_163722.jpg"/>
           <p>Figure 1 : Liste des étapes de la mise à niveau</p>
         </v-card-text>
         <v-card-text class="dirCol">
-          <img class="img1 borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
+          <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
           <i>Ancienne version</i>
-          <img class="img1 borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
+          <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
           <i>Nouvelle version</i>
           <p class="legImg">Ensemble 1 : Comparaison avec et sans binding dans deux versions du code de ElectroMob </p>
         </v-card-text>
@@ -40,7 +40,6 @@
       <v-container
           class="spaceBtw">
         <v-card-text class="txt">
-          <h3>pkze</h3>
           <p>
             La figure 1 présente 6 étapes que je devais réaliser pour la mise à niveau.
             Les étapes sur la figure 1 ont été écrites au début de mon stage, il y a évidemment d’autres étapes.
@@ -61,15 +60,18 @@
         </v-card-text>
       </v-container>
       <v-container>
-        <h2>Intégrité des données</h2>
+        <h3>Intégrité des données</h3>
       </v-container>
       <v-container>
         <v-card-text class="txt">
           <p>
-            La troisième étape était la complexe et la plus importante, le but étant de définir si les capteurs enregistraient
-            les bonnes données et si ces données étaient cohérentes avec celles enregistrées par le téléphone Samsung S8
-            (qu’on nommera par la suite S8). En somme, cela demande des compétences d’analyse et de traitement de données.
-            Les données enregistrées peuvent différer selon le modèle du téléphone et de la version d’android.
+            La troisième étape était la complexe et la plus importante, le but étant de définir si les capteurs enregistraient les bonnes données
+            et si ces données étaient cohérentes avec celles enregistrées par le téléphone Samsung S8 (qu’on nommera par la suite S8). Ce qu’il faut savoir,
+            c’est que l’application fonctionne en position horizontale, caméra frontale à gauche, due aux besoins des expérimentations.
+            Il y a donc un besoin de transformer ce qui est capturé pour rester en adéquation avec les données réelles du véhicule. Fort heureusement,
+            ces changements ont été fait sur les versions des S8.
+            Cependant, les données enregistrées peuvent différer selon le modèle du téléphone et de la version d’android.
+            En somme, cela demande des compétences d’analyse et de traitement de données.
           </p>
           <p>Les données analysées et leurs capteurs : </p>
           <v-container class="txt" style="padding-inline: 60px">
@@ -110,7 +112,7 @@
           </p>
           <p>
             Il ne reste alors que les axes d’orientation et les axes de gravité.
-            Les axes de gravité dépendants du capteur des axes d’accélération, cela me donne les mêmes résultats mais en nombre de g (l'unité).
+            Les axes de gravité dépendants du capteur des axes d’accélération, cela me donne les mêmes résultats mais en unité de g.
             Je me suis alors concentré sur les axes d’orientation.
           </p>
         </v-card-text>
@@ -118,13 +120,13 @@
       <v-container
           class="spaceBtw align">
         <v-card-text class="dirCol">
-          <img class="img1_5 borderImg"  alt="Image not found" src="@/assets/screen_code_orient.png"/>
-          <p class="legImg">Figure 3 : Capture d'écran des fonctions nécessaires aux axes d'orientation </p>
+          <img class="img_5 borderImg"  alt="Image not found" src="@/assets/screen_code_orient.png"/>
+          <p class="legImg">Figure 2 : Capture d'écran des fonctions nécessaires aux axes d'orientation </p>
         </v-card-text>
         <v-card-text class="dirCol">
-          <img class="img2 borderImg" alt="Image not found" src="@/assets/orientation_axis.png"/>
+          <img class="img borderImg" alt="Image not found" src="@/assets/orientation_axis.png"/>
           <p class="legImg">
-            Figure 4 : Illustration des axes d'orientation d'un téléphone
+            Figure 3 : Illustration des axes d'orientation d'un téléphone
             <br>
           <a href="https://www.mathworks.com/help/simulink/supportpkg/android_ref/orientation.html" class="txt" style="color: black; font-size: small">
             (Tiré du site mathworks.com)
@@ -132,7 +134,7 @@
           </p>
         </v-card-text>
       </v-container>
-      <v-container class="txt">
+      <v-container>
         <v-card-text class="txt">
           <p>
             La compréhension de ce que représentent ces axes était la difficulté de cette tâche.
@@ -142,10 +144,10 @@
             et roulis pour tourner en tonneau sur la droite ou la gauche.
           </p>
           <p>
-            Pour un téléphone, on peut apercevoir sur la figure 4 que le téléphone est en position couché, écran vers le plafond,
-            que le lacet se nomme azimuth, le tangage : pitch, et le roulis : roll. Pour capturer les données dans l’application comme le montre la figure 3,
-            on utilise une fonction qui prend en compte le capteur de gravité et le capteur de champ magnétique terrestre pour en faire une matrice de rotation
-            et avoir nos axes d’orientation.
+            Pour un téléphone, on peut apercevoir sur la figure 3 que le téléphone est en position couché,
+            écran vers le plafond, que le lacet se nomme azimuth, le tangage : pitch, et le roulis : roll.
+            Pour capturer les données dans l’application comme le montre la figure 2, on utilise une fonction qui prend en compte le capteur de gravité
+            et le capteur de champ magnétique terrestre pour en faire une matrice de rotation et avoir nos axes d’orientation.
           </p>
         </v-card-text>
       </v-container>
@@ -153,8 +155,8 @@
           class="spaceBtw">
         <v-card-text class="txt">
           <p>
-            Pour avoir les bonnes données d’orientation, la figure 5 démontre que les axes Y et Z de gravité ont dû être inversés
-            pour la fonction de matrice. En effet, en faisant mes tests je me suis rendu compte que le tangage et le roulis étaient inversés,
+            Pour avoir les bonnes données d’orientation, la figure 4 démontre que les axes Y et Z de gravité ont dû être inversés pour la fonction de matrice.
+            En effet, en faisant mes tests je me suis rendu compte que le tangage et le roulis étaient inversés,
             le problème étant que le roulis et le tangage n’ont pas les mêmes unités donc je ne pouvais pas seulement inverser les deux axes d’orientation.
           </p>
           <p>
@@ -163,30 +165,50 @@
         </v-card-text>
         <v-container class="spaceBtw">
           <v-card-text>
-            <img class="img2 borderImg" alt="Image not found" src="@/assets/axes_orient_tab.png"/>
-            <p class="legImg">Figure 5 : Photo rognée du changement des axes d'orientation</p>
+            <img class="img borderImg" alt="Image not found" src="@/assets/axes_orient_tab.png"/>
+            <p class="legImg">Figure 4 : Photo rognée du changement des axes d'orientation</p>
           </v-card-text>
         </v-container>
       </v-container>
       <v-container>
-        <v-card-text>
-
-        </v-card-text>
-      </v-container>
-      <v-container
-          class="spaceBtw align">
-        <v-card-text class="dirCol">
-          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S8.png"/>
-          <img class="img3 borderImg" alt="Image not found" src="@/assets/code_accelero_S20.png"/>
-          <p class="legImg">Ensemble 2 : Comparaison de deux versions du code de ElectroMob entre S8 et S20</p>
-        </v-card-text>
-        <v-card-text class="dirCol">
-          <img class="img0 borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
-          <p class="legImg">Figure 2 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
+        <v-card-text class="txt">
+          <p>
+            Pour revenir à ce qui est dit précédemment, les axes d’accélération semblait cohérents.
+            Ici, la difficulté était de déterminer les résultats attendus car il y a des normes pour les axes que l’on retrouve quand,
+            par exemple, on enregistre un véhicule allant droit devant lui. Or, les axes d’un téléphone ne correspondent pas aux normes.
+          </p>
         </v-card-text>
       </v-container>
       <v-container>
-        <h2>Tests en conditions réelles</h2>
+        <v-card-text class="dirCol">
+          <img class="img borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
+          <p class="legImg">Figure 5 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            Comme le montre la figure 5, on obtient les mêmes résultats sur S8 que sur S20. Pourtant, quand j’ai présenté les résultats à ma supérieure,
+            supérieure qui s’occupe du traitement des données de l’application, elle a affirmé que l’axe X était inversé par rapport à la norme des axes.
+          </p>
+          <p>
+            Cette erreur d’axe d’accélération X était présente dans les anciennes versions des applications.
+            Par faute de traitement de données, l’erreur n’a pas été corrigée.
+          </p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <h3>Tests en conditions réelles</h3>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            Comme l
+          </p>
+          <p>
+            Cette e
+          </p>
+        </v-card-text>
       </v-container>
       <v-container
           class="spaceBtw">
