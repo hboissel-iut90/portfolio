@@ -35,16 +35,16 @@
         <v-container
             class="spaceBtw">
           <v-card-text class="dirCol align">
-            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
-            <i>Ancienne version</i>
-            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
-            <i>Nouvelle version</i>
+            <img class="img2 borderImg" alt="Image not found" src="@/assets/MeteoFrance.png"/>
+            <i>Logo de Météo France</i>
+            <img style="margin-top: 60px" class="img borderImg" alt="Image not found" src="@/assets/MeteoStat.png"/>
+            <i>Logo de MétéoStat</i>
           </v-card-text>
           <v-card-text class="dirCol align">
-            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
-            <i>Ancienne version</i>
-            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
-            <i>Nouvelle version</i>
+            <img class="img borderImg" alt="Image not found" src="@/assets/OpenMeteo.jpg"/>
+            <i>Logo d'OpenMétéo</i>
+            <img class="img2 borderImg" alt="Image not found" src="@/assets/OpenWeather.png"/>
+            <i>Logo d'OpenWeather</i>
           </v-card-text>
         </v-container>
         <p style="font-size: smaller" class="legImg">Ensemble 1 : API météo trouvées lors de mes recherches + API

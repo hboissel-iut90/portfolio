@@ -108,6 +108,10 @@ export default {
   max-width: 90%;
 }
 
+.img2 {
+  max-width: 50%;
+}
+
 .logosUniv1 {
   max-height: 100px;
   border: solid darkslategray 0px;
