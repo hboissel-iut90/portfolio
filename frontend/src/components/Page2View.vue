@@ -37,13 +37,13 @@
           <v-card-text class="dirCol align">
             <img class="img2 borderImg" alt="Image not found" src="@/assets/MeteoFrance.png"/>
             <i>Logo de Météo France</i>
-            <img style="margin-top: 60px" class="img borderImg" alt="Image not found" src="@/assets/MeteoStat.png"/>
+            <img style="margin-top: 100px" class="img borderImg" alt="Image not found" src="@/assets/MeteoStat.png"/>
             <i>Logo de MétéoStat</i>
           </v-card-text>
-          <v-card-text class="dirCol align">
+          <v-card-text style="margin-top: 20px" class="dirCol align">
             <img class="img borderImg" alt="Image not found" src="@/assets/OpenMeteo.jpg"/>
             <i>Logo d'OpenMétéo</i>
-            <img class="img2 borderImg" alt="Image not found" src="@/assets/OpenWeather.png"/>
+            <img style="margin-top: 30px" class="img2 borderImg" alt="Image not found" src="@/assets/OpenWeather.png"/>
             <i>Logo d'OpenWeather</i>
           </v-card-text>
         </v-container>
