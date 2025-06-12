@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="font-size: large;">
     <v-card
         style="border: black solid 2px"
         color="rgba(245,245,245)"
@@ -7,21 +7,13 @@
       <v-container>
         <h1>Protocole de rootage de téléphone</h1>
       </v-container>
-      <v-container
-          class="spaceBtw">
+      <v-container>
         <v-card-text class="txt">
-          La figure 1 présente les différentes étapes que je devais réaliser dans les débuts de mon stage.
-          J'ai posé le problème sur un tableau.
-        </v-card-text>
-        <v-card-text class="dirCol legImg">
-          <img class="img2" alt="Image not found" src="@/assets/logo.png"/>
-          Figure 1 : Liste des étapes de la mise à niveau + schémas des problèmes rencontrés pendant la réalisation
+          <p></p>
         </v-card-text>
       </v-container>
-      <v-container
-        class="spaceBtw"
-      >
-
+      <v-container style="color: gray">
+        <h2>En progression ...</h2>
       </v-container>
       <v-container
           class="spaceBtw">

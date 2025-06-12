@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <v-container style="font-size: large;">
     <v-card
         style="border: black solid 2px"
         color="rgba(245,245,245)"
     >
       <v-container>
-        <v-container>
+        <v-container style="font-size: large;">
           <h1>Contexte</h1>
         </v-container>
-        <v-container>
+        <v-container style="font-size: large;">
           <h2 style="padding: 10px">Où et quand ?</h2>
           <h4>Mon stage s'est déroulé du 7 avril 2025 au 27 juin 2025
             au Laboratoire Mécanismes d'Accidents de l'Université Gustave Eiffel.</h4>
@@ -20,7 +20,7 @@
           </h4>
         </v-container>
         <h3>_</h3>
-        <v-container>
+        <v-container style="font-size: large;">
           <h2 style="padding: 10px">Missions</h2>
           <v-card-text class="txt" style="padding: 5px">
             <p>

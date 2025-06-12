@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="font-size: large;">
     <v-card
         style="border: black solid 2px"
         color="rgba(245,245,245)"
@@ -205,30 +205,29 @@
         <v-card-text class="txt">
           <p>
             Pour m’aider dans la finalisation, un collègue faisant du vélo pour ce rendre au laboratoire a accepter de prendre un téléphone du labo pour ses trajets.
-            Pour cela, on a utilisé un prototype de support S20 que l’on a accroché sur le guidon de son vélo, voir figure 6. Puis 1 à 3 fois par semaine,
+            Pour cela, on a utilisé un prototype de support S20 que l’on a accroché sur le guidon de son vélo, voir figure 6 ci-dessous. Puis 1 à 3 fois par semaine,
             je reprenais le téléphone pour vérifier les fichiers et pour modifier l’application si besoin.
           </p>
-        </v-card-text>
-      </v-container>
-      <v-container>
-        <v-card-text class="dirCol align">
-          <img class="img borderImg" alt="Image not found" src="@/assets/proto_support_s20_zoom.png"/>
-          <p class="legImg">Figure 6 : Photo du prototype de support de S20 </p>
-        </v-card-text>
-      </v-container>
-      <v-container>
-        <v-card-text class="txt">
           <p>
             J’ai aussi fait de mon côté des tests en conditions réelles en prenant un téléphone et en faisant mes trajets.
             Cela permet d’avoir plus de matière pour déceler des erreurs ou des bugs.
           </p>
+        </v-card-text>
+      </v-container>
+      <v-container class="spaceBtw">
+        <v-card-text class="dirCol align">
+          <img class="img borderImg" alt="Image not found" src="@/assets/proto_support_s20_zoom.png"/>
+          <p class="legImg">Figure 6 : Photo du prototype de support de S20 </p>
+        </v-card-text>
+        <v-card-text class="txt">
           <p>Ces tests m’ont permis de détecter différents problèmes :</p>
-          <v-container class="txt" style="padding-inline: 60px">
+          <v-container class="txt" style="padding-inline: 30px">
             <ul>
               <li><h4>le téléphone n’enregistrant plus de données après une minute de veille à cause d’une fonctionnalité système : le «Doze Mode»;</h4></li>
               <br>
-              <li><h4>un problème d’envoi des données causé par le réseau mobile qui dysfonctionnait ou par le rootage (voir page 3)
-                qui était dans une version bloquant l’utilisation du réseau;</h4></li>
+              <li><h4>un problème d’envoi des données causé par le réseau mobile qui dysfonctionnait ou par le rootage
+                <a style="color: darkblue" @click="goTo('/3')"> (voir page 3) </a>
+                      qui était dans une version bloquant l’utilisation du réseau;</h4></li>
               <br>
               <li><h4>un bug d’enregistrements des données dans le fichier produit par une fonctionnalité android obsolète : Sensor.TYPE_ORIENTATION.</h4></li>
               <br>

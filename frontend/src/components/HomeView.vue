@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="font-size: large;">
     <v-card-text style="margin-top: 100px;">
       <h1>Bienvenue sur le portfolio de Harry Boisselot.</h1>
     </v-card-text>
@@ -92,7 +92,7 @@ export default {
 .txt {
   text-align: justify;
   font-weight: bold;
-  font-size: medium;
+  font-size: large;
 }
 
 .borderImg {

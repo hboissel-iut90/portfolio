@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="font-size: large;">
     <v-card
         style="border: black solid 2px"
         color="rgba(245,245,245)"
@@ -7,21 +7,17 @@
       <v-container>
         <h1>Ajout de nouvelles données</h1>
       </v-container>
-      <v-container
-          class="spaceBtw">
+      <v-container>
         <v-card-text class="txt">
-          La figure 1 présente les différentes étapes que je devais réaliser dans les débuts de mon stage.
-          J'ai posé le problème sur un tableau.
-        </v-card-text>
-        <v-card-text class="dirCol legImg">
-          <img class="img2" alt="Image not found" src="@/assets/logo.png"/>
-          Figure 1 : Liste des étapes de la mise à niveau + schémas des problèmes rencontrés pendant la réalisation
+          <p>
+            Cette mission intervient à la suite de la passation S8 à S20 et vient compléter les données de capteurs par des données météorologiques ou de trafic routier.
+            Elle a pour idée de prendre des données à partir d’API (= Interface de Programmation d’Application) à partir de requêtes en HTTP (= Protocole de Transfert HyperTexte)
+            pour les transformer en données exploitables et les ajouter dans le fichier.
+          </p>
         </v-card-text>
       </v-container>
-      <v-container
-          class="spaceBtw"
-      >
-
+      <v-container>
+        <h2>Recherche d’API</h2>
       </v-container>
       <v-container
           class="spaceBtw">
