@@ -19,13 +19,14 @@
       Contexte
     </v-btn>
 
-    <!-- <v-card-text class="spaceEvl" style="margin-top: 70px">
+    <v-card-text class="spaceEvl" style="margin-top: 70px">
       <img class="logos2" alt="Image not found" src="@/assets/logo_iut3.png">
       <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
       <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
       <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
       <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
-    </v-card-text>-->
+    </v-card-text>
+    */
   </v-container>
 </template>
 

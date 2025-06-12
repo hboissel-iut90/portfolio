@@ -14,6 +14,7 @@
             développées par le laboratoire, pour les rendre compatibles avec un téléphone Samsung S20 (qu’on nommera par la suite S20)
             et de les ergonomiser.  Les applications permettent d’enregistrer différents types de données par ces capteurs intégrés
             et une vidéo qui montrent le trajet du participant. De ce fait, je devais aussi vérifier l’intégrité des données enregistrées.
+            La dernière étape étant de tester l’application en conditions réelles.
           </p>
           <p>
             Ces applications sont codées en langage de programmation Java/Kotlin avec l'environnement de développement (IDE) Android Studio.
@@ -203,10 +204,47 @@
       <v-container>
         <v-card-text class="txt">
           <p>
-            Comme l
+            Pour m’aider dans la finalisation, un collègue faisant du vélo pour ce rendre au laboratoire a accepter de prendre un téléphone du labo pour ses trajets.
+            Pour cela, on a utilisé un prototype de support S20 que l’on a accroché sur le guidon de son vélo, voir figure 6. Puis 1 à 3 fois par semaine,
+            je reprenais le téléphone pour vérifier les fichiers et pour modifier l’application si besoin.
           </p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <v-card-text class="dirCol">
+          <img class="img borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
+          <p class="legImg">Figure 6 : Photo du prototype de support de S20 </p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
           <p>
-            Cette e
+            J’ai aussi fait de mon côté des tests en conditions réelles en prenant un téléphone et en faisant mes trajets.
+            Cela permet d’avoir plus de matière pour déceler des erreurs ou des bugs.
+          </p>
+          <p>Ces tests m’ont permis de détecter différents problèmes :</p>
+          <v-container class="txt" style="padding-inline: 60px">
+            <ul>
+              <li><h4>le téléphone n’enregistrant plus de données après une minute de veille à cause d’une fonctionnalité système : le «Doze Mode»;</h4></li>
+              <br>
+              <li><h4>un problème d’envoi des données causé par le réseau mobile qui dysfonctionnait ou par le rootage (voir page 3)
+                qui était dans une version bloquant l’utilisation du réseau;</h4></li>
+              <br>
+              <li><h4>un bug d’enregistrements des données dans le fichier produit par une fonctionnalité android obsolète : Sensor.TYPE_ORIENTATION.</h4></li>
+              <br>
+            </ul>
+          </v-container>
+          <p>
+            Mais ils m’ont aussi permis de vérifier s’il n’y avait pas de la perte de données, comme des fichiers vides ou corrompus.
+          </p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            Pour conclure, cette mission m’a appris autant du savoir dans le développement d’applications mobiles avec des nouveaux principes
+            comme la gestion des capteurs d’un téléphone, que dans la physique avec le traitement des axes, mais aussi du savoir-faire,
+            en remaniant des applications nouvelles pour moi dans une version d’android différente à Android JetPack Compose.
           </p>
         </v-card-text>
       </v-container>

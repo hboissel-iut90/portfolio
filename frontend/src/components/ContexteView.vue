@@ -23,11 +23,13 @@
         <v-container>
           <h2 style="padding: 10px">Missions</h2>
           <v-card-text class="txt" style="padding: 5px">
-            Le laboratoire fait des expérimentations sur tout type de véhicule depuis plusieurs années
-            en demandant à des volontaires de faire leurs trajets habituels avec un enregistreur de données de la route (EDR).
-            Les expérimentations actuelles à ce stage se font sur des vélos et des vélos-cargo où l'on vient accrocher un téléphone
-            pour enregistrer les différentes données des capteurs internes grâce à une application développée par le labo (application différente selon l'expérimentation).
-            L'idée était de changer de téléphone car l'ancien modèle était trop vieux.
+            <p>
+              Le laboratoire fait des expérimentations sur tout type de véhicule depuis plusieurs années en demandant à des volontaires de faire leurs trajets habituels
+              avec un enregistreur de données de la route (EDR). Les expérimentations actuelles de ce stage se font sur des vélos et des vélos-cargo
+              où l'on vient accrocher un téléphone pour enregistrer les différentes données des capteurs internes grâce à une application développée
+              par le labo (application différente selon l'expérimentation). Les données sont ensuite envoyées à une base de données grâce à l’application.
+              Les téléphones vieillissants, le laboratoire veut changer de modèle de téléphone et donc mettre à jour leurs applications.
+            </p>
           </v-card-text>
           <h4> Mon stage a donc était découpé en plusieurs missions :</h4>
           <v-container class="txt" style=" padding-inline: 60px">
