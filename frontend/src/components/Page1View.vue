@@ -26,11 +26,11 @@
       </v-container>
       <v-container
           class="spaceBtw">
-        <v-card-text class=" dirCol legImg">
+        <v-card-text class=" dirCol align legImg">
           <img class="img borderImg" alt="Image not found" src="@/assets/IMG_20250410_163722.jpg"/>
           <p>Figure 1 : Liste des étapes de la mise à niveau</p>
         </v-card-text>
-        <v-card-text class="dirCol">
+        <v-card-text class="dirCol align">
           <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
           <i>Ancienne version</i>
           <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
@@ -120,11 +120,11 @@
       </v-container>
       <v-container
           class="spaceBtw align">
-        <v-card-text class="dirCol">
+        <v-card-text class="dirCol align">
           <img class="img_5 borderImg"  alt="Image not found" src="@/assets/screen_code_orient.png"/>
           <p class="legImg">Figure 2 : Capture d'écran des fonctions nécessaires aux axes d'orientation </p>
         </v-card-text>
-        <v-card-text class="dirCol">
+        <v-card-text class="dirCol align">
           <img class="img borderImg" alt="Image not found" src="@/assets/orientation_axis.png"/>
           <p class="legImg">
             Figure 3 : Illustration des axes d'orientation d'un téléphone
@@ -181,7 +181,7 @@
         </v-card-text>
       </v-container>
       <v-container>
-        <v-card-text class="dirCol">
+        <v-card-text class="dirCol align">
           <img class="img borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
           <p class="legImg">Figure 5 : Comparaison de graphiques des axes d'accélération entre S8 et S20</p>
         </v-card-text>
@@ -211,8 +211,8 @@
         </v-card-text>
       </v-container>
       <v-container>
-        <v-card-text class="dirCol">
-          <img class="img borderImg" alt="Image not found" src="@/assets/comparaison_graph_accelero.png"/>
+        <v-card-text class="dirCol align">
+          <img class="img borderImg" alt="Image not found" src="@/assets/proto_support_s20_zoom.png"/>
           <p class="legImg">Figure 6 : Photo du prototype de support de S20 </p>
         </v-card-text>
       </v-container>

@@ -8,9 +8,9 @@
       <h3 style="padding: 5px"><strong>Venez découvrir mon expérience professionnelle développée</strong></h3>
       <h3 style="padding: 5px"><strong>pendant mon stage à l'Université Gustave Eiffel. </strong></h3>
     </v-card-text>
-    <v-card-text class="spaceBtw" style="margin-bottom: 70px">
-      <img class="logos" alt="Image not found" src="@/assets/logo_iut3.png">
-      <img class="logos" alt="Image not found" src="@/assets/logo_UGE.png">
+    <v-card-text class="spaceBtw " style="margin-bottom: 70px">
+      <img class="logosUniv1" alt="Image not found" src="@/assets/UMLP.png">
+      <img class="logosUniv2" alt="Image not found" src="@/assets/logo_UGE.png">
     </v-card-text>
     <v-btn
         @click="goTo('/contexte')"
@@ -18,15 +18,26 @@
     >
       Contexte
     </v-btn>
-
-    <v-card-text class="spaceEvl" style="margin-top: 70px">
-      <img class="logos2" alt="Image not found" src="@/assets/logo_iut3.png">
-      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
-      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
-      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
-      <img class="logos2" alt="Image not found" src="@/assets/logo_UGE.png">
+    <v-card-text class="spaceEvl align" style="margin-top: 100px; padding-left: 130px">
+      <a style="text-decoration: none; color: black" href="https://github.com/hboissel-iut90">
+        <v-container>
+         <img class="logos2" alt="Image not found" src="@/assets/github.png">
+          <p class="txt">Github</p>
+        </v-container>
+      </a>
+      <a style="text-decoration: none; color: black" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
+        <v-container>
+          <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
+          <p class="txt">Email universitaire</p>
+        </v-container>
+      </a>
+      <a style="text-decoration: none; color: black" href="mailto:harry.boisselot@gmail.com">
+        <v-container>
+          <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
+          <p class="txt">Email professionnelle</p>
+        </v-container>
+      </a>
     </v-card-text>
-    */
   </v-container>
 </template>
 
@@ -52,9 +63,14 @@ export default {
   justify-content: space-between;
 }
 
-.spaceEvl{
+.spaceEvl {
   display: flex;
   justify-content: space-evenly;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 .glued {
@@ -66,7 +82,11 @@ export default {
 .dirCol {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.dirRow {
+  display: flex;
+  flex-direction: row;
 }
 
 .txt {
@@ -88,17 +108,23 @@ export default {
   max-width: 90%;
 }
 
-.logos {
+.logosUniv1 {
+  max-height: 100px;
+  border: solid darkslategray 0px;
+  border-radius: 0px;
+  padding-left: 100px;
+}
+
+.logosUniv2 {
   max-width: 400px;
   max-height: 80px;
-  margin-left: 10px;
   border: solid darkslategray 0px;
   border-radius: 0px;
 }
 
 .logos2 {
   max-width: 100px;
-  max-height: 80px;
+  max-height: 30px;
   border: solid darkslategray 0px;
   border-radius: 0px;
 }
