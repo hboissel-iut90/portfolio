@@ -4,7 +4,7 @@
       <h1>Bienvenue sur le portfolio de Harry Boisselot.</h1>
     </v-card-text>
     <v-card-text>
-      <h3 style="padding: 5px"><strong>Étudiant en deuxième de BUT Informatique à l'IUT Nord Franche-Comté.</strong></h3>
+      <h3 style="padding: 5px"><strong>Étudiant en deuxième de BUT Informatique à l'Université Marie et Louis Pasteur.</strong></h3>
       <h3 style="padding: 5px"><strong>Venez découvrir mon expérience professionnelle développée</strong></h3>
       <h3 style="padding: 5px"><strong>pendant mon stage à l'Université Gustave Eiffel. </strong></h3>
     </v-card-text>
