@@ -69,11 +69,49 @@
           </p>
         </v-card-text>
         <v-card-text class=" dirCol align legImg">
-          <img class="img borderImg" alt="Image not found" src="@/assets/IMG_20250410_163722.jpg"/>
+          <img class="img borderImg" alt="Image not found" src="@/assets/tableau_routier.png"/>
           <p>Figure 1 : Benchmark des API de trafic routier</p>
         </v-card-text>
       </v-container>
       <v-container>
+        <v-card-text class="txt">
+          <p>
+            Comme présenté sur la figure 1, j’ai pu trouvé six API de trafic routier présentant chacune leurs propres données.
+            En les prenant à chacun leur tour : TomTom, fournisseur de données météo et routières,
+            avait des conditions d’utilisateur ne permettant d’exploiter une autre API météo que celle leur appartenant,
+            ce qui bloque l’utilisation de leurs API; le Cerema, centre national français d’études sur les transports,
+            Waze et l’API Google n’ont pas de données exploitables dans le cadre des recherches du laboratoire;
+            Bizon futé, autre organisation française sur le trafic routier, offre des données trop complexe à exploiter;
+            et pour pouvoir accéder à l’API de Coyote, il faut les contacter sur leur site web.
+          </p>
+          <p>
+            Par rapport aux API météo, il est plus difficile d’accéder à des données de trafic routier gratuitement et en temps réel,
+            pour première raison que chaque API demande d’avoir un compte,
+            mais surtout la seconde qui provient du fait qu’il est difficile pour les gestionnaires de routes de fournir des données en continu
+            car cette tâche peut être chronophage et peut ne pas être leur priorité, mais aussi que toutes les routes de France ne sont pas publiques,
+            contrairement aux données météo qui ne sont pas des données appartenant à un tiers.
+          </p>
+          <p>
+            Il n’y a finalement pas eu de décision concernant le choix de l’API.
+          </p>
+        </v-card-text>
+        <v-card-text class="txt">
+          En parallèle des recherches, j’ai crée mon code d’envoi de requête pour tester les réponses de certaines API.
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <h2>Implémentation des API</h2>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            Le code d’implémentation des données météorologiques et celui des données de trafic routier sont les mêmes à quelques détails près,
+            je ne présenterai alors que le code pour l’API météo.
+          </p>
+          <p>
+
+          </p>
+        </v-card-text>
       </v-container>
       <v-container
           class="spaceBtw">
