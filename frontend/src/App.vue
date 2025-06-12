@@ -90,5 +90,6 @@ export default {
   text-align: center;
   color: black;
   background-image: url("@/assets/w.jpg");
+
 }
 </style>

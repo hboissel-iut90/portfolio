@@ -60,7 +60,7 @@
           </p>
         </v-card-text>
       </v-container>
-      <v-container>
+      <v-container style="margin-top: 30px">
         <h3>Intégrité des données</h3>
       </v-container>
       <v-container>
