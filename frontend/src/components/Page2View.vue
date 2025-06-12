@@ -19,6 +19,62 @@
       <v-container>
         <h2>Recherche d’API</h2>
       </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            La première étape de cette mission était de trouver des API capables de nous fournir des données pertinentes pour le laboratoire, en temps réel,
+            de préférence gratuitement, et de préférence sans passer par la création d’un compte. J’ai alors débuté les recherches par l’API météo.
+          </p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+        <v-container
+            class="spaceBtw">
+          <v-card-text class="dirCol align">
+            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
+            <i>Ancienne version</i>
+            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
+            <i>Nouvelle version</i>
+          </v-card-text>
+          <v-card-text class="dirCol align">
+            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_avant.png"/>
+            <i>Ancienne version</i>
+            <img class="img borderImg" alt="Image not found" src="@/assets/code_layout_apres.png"/>
+            <i>Nouvelle version</i>
+          </v-card-text>
+        </v-container>
+          <p style="font-size: smaller" class="legImg">Ensemble 1 : API météo trouvées lors de mes recherches + API conseillée par mon tuteur </p>
+      </v-container>
+      <v-container>
+        <v-card-text class="txt">
+          <p>
+            La première étape de cette mission était de trouver des API capables de nous fournir des données pertinentes pour le laboratoire, en temps réel,
+            de préférence gratuitement, et de préférence sans passer par la création d’un compte. J’ai alors débuté les recherches par l’API météo.
+          </p>
+          <v-container class="txt" style="padding-inline: 60px">
+            <ul>
+              <li><h4>OpenMétéo, API gratuite sans compte et qui permet de faire cinq-cents requêtes par minutes et dix-mille par jour possédant un grand nombre de données en temps réel;</h4></li>
+              <br>
+              <li><h4>MétéoStat, API conseillée par mon tuteur, pouvant fournir un grand nombre de données gratuitement.</h4></li>
+              <br>
+            </ul>
+          </v-container>
+          <p>
+            J’ai fait le choix de prendre OpenMétéo qui répondait à tous les critères, sachant que MétéoStat ne fournit que des tableurs et donc aucune donnée en temps réel.
+          </p>
+        </v-card-text>
+        <v-card-text class="txt">
+          <p>
+            Une fois la base de donnée météo trouvée, il fallait s’attaquer à l’API de trafic routier.
+          </p>
+        </v-card-text>
+        <v-card-text class=" dirCol align legImg">
+          <img class="img borderImg" alt="Image not found" src="@/assets/IMG_20250410_163722.jpg"/>
+          <p>Figure 1 : Benchmark des API de trafic routier</p>
+        </v-card-text>
+      </v-container>
+      <v-container>
+      </v-container>
       <v-container
           class="spaceBtw">
         <v-btn
