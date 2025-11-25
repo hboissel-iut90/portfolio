@@ -28,7 +28,7 @@
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn dark v-bind="attrs" v-on="on">
-            DEROULE
+            MENU
           </v-btn>
         </template>
 
