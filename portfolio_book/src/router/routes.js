@@ -66,7 +66,10 @@ const routes = [
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
-    routes
+    routes,
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
 })
 
 // check for all routes needing privileges that user is authenticated

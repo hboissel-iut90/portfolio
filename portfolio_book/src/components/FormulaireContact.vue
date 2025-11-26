@@ -9,53 +9,69 @@
 
       <v-container
       class="dirRow">
-        <v-card-text
-        class="dirCol"
-        style="padding-block: 50px;">
-          <v-card-text
-              class="dirCol containHover">
-            <label style="padding-right: 20px" class="txt" for="nom">Nom :</label>
-            <input class="txt" type="text" id="nom" v-model="form"/>
-          </v-card-text>
-          <v-card-text
-              class="dirCol containHover">
-            <label class="txt" for="prenom">Prénom :</label>
-            <input class="txt" type="text" id="prenom" v-model="form"/>
-          </v-card-text>
+        <v-container
+          class="dirCol"
+          style="padding-block: 20px;">
+
+          <div
+              class="dirRow">
+            <v-card-text
+                class="dirCol containHover">
+              <label style="padding-right: 20px" class="txt" for="nom">Nom :</label>
+              <input class="txt" type="text" id="nom" v-model="nom"/>
+            </v-card-text>
+            <v-card-text
+                class="dirCol containHover">
+              <label class="txt" for="prenom">Prénom :</label>
+              <input class="txt" type="text" id="prenom" v-model="prenom"/>
+            </v-card-text>
+          </div>
+
           <v-card-text
               class="dirCol containHover">
             <label class="txt" for="mail">Email :</label>
-            <input class="txt" type="email" id="mail" v-model="form"/>
+            <input class="txt" type="email" id="mail" v-model="email"/>
           </v-card-text>
           <v-card-text
               class="dirCol containHover">
             <label class="txt" for="message">Message :</label>
-            <v-textarea color="white" class="txt" variant="outlined" v-model="form" auto-grow counter="1000"></v-textarea>
+            <v-textarea color="white" class="txt" variant="outlined" v-model="msg" auto-grow counter="1000"></v-textarea>
           </v-card-text>
-        </v-card-text>
+          <v-card-text
+              class="dirCol">
+            <v-btn class="txt" color="black" @click="sendContact()">Envoyer</v-btn>
+          </v-card-text>
+        </v-container>
 
-        <v-card-text
+        <v-container
             class="dirCol align"
-            style="margin-top: 100px">
-          <a style="text-decoration: none; color: black" href="https://github.com/hboissel-iut90">
-            <v-container>
-              <img class="logos2" alt="Image not found" src="@/assets/github.png">
-              <p class="txtLink">Github</p>
-            </v-container>
-          </a>
-          <a style="text-decoration: none; color: black" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
-            <v-container>
-              <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
-              <p class="txtLink">Email universitaire</p>
-            </v-container>
-          </a>
-          <a style="text-decoration: none; color: black" href="mailto:harry.boisselot@gmail.com">
-            <v-container>
-              <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
-              <p class="txtLink">Email professionnelle</p>
-            </v-container>
-          </a>
-        </v-card-text>
+            style="margin-top: 25px">
+          <div class="dirRow">
+            <a class="link" href="https://github.com/hboissel-iut90">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
+                <div class="txtLink">Github</div>
+                <div class="txtLink">hboissel-iut90</div>
+              </v-container>
+            </a>
+          </div>
+          <div class="dirRow">
+            <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
+                <div class="txtLink">Email universitaire</div>
+                <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
+              </v-container>
+            </a>
+            <a class="link" href="mailto:harry.boisselot@gmail.com">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
+                <div class="txtLink">Email professionnelle</div>
+                <div class="txtLink">harry.boisselot@gmail.com</div>
+              </v-container>
+            </a>
+          </div>
+        </v-container>
 
       </v-container>
 
@@ -63,21 +79,39 @@
 </template>
 
 <script>
-// import {mapActions} from "vuex";
+import {mapActions} from "vuex";
 
 export default {
   name: 'FormulaireContact',
   data() {
     return {
-      form: ""
+      nom: "",
+      prenom: "",
+      email: "",
+      msg: "",
     }
   },
   methods: {
-    // ...mapActions(['keepPage']),
+     ...mapActions(['registerContact']),
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
       }
+    },
+    sendContact() {
+      const data = {
+        nom: this.nom,
+        prenom: this.prenom,
+        email: this.email,
+        msg: this.msg,
+      };
+
+      this.registerContact(data);
+
+      this.nom = "";
+      this.prenom = "";
+      this.email = "";
+      this.msg = "";
     }
   },
 }
@@ -119,7 +153,7 @@ export default {
   padding: 5px;
   text-align: center;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
   font-family: "DejaVu Sans Mono", monospace;
   color : white;
   border: solid whitesmoke 2px;
@@ -134,20 +168,29 @@ export default {
   color: white !important;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 .txtLink {
-  text-align: justify;
+  text-align: center;
   font-weight: bold;
-  font-size: large;
+  font-size: medium;
   color: white;
+}
+
+.txtLinkHover:hover * {
+  color: lightseagreen !important;
+}
+
+.align {
+  align-items: center;
 }
 
 .borderImg {
   border: solid darkslategray 2px;
   border-radius: 20px;
-}
-
-.align {
-  align-items: center;
 }
 
 .img {
