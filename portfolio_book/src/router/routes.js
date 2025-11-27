@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from "@/components/HomeView.vue";
 import ErrorDialog from "@/components/ErrorDialog.vue";
-import Page1View from "@/components/Page1View.vue";
-import Page2View from "@/components/Page2View.vue";
+import AProposView from "@/components/AProposView.vue";
+import ProjetsView from "@/components/ProjetsView.vue";
 import Page3View from "@/components/Page3View.vue";
 import ContexteView from "@/components/ContexteView.vue";
 import FormulaireContact from "@/components/FormulaireContact.vue";
@@ -16,8 +16,10 @@ const routes = [
         name: 'home',
         components: {
             central: HomeView,
+            apropos: AProposView,
             footer: FormulaireContact
         },
+        meta: { anchor: true }
     },
     {
         path: '/contexte',
@@ -27,19 +29,19 @@ const routes = [
             footer: FormulaireContact
         },
     },
+    /*
     {
-        path: '/1',
-        name: 'page1',
+        path: '/apropos',
+        name: 'apropos',
         components: {
-            central: Page1View,
             footer: FormulaireContact
         },
-    },
+    },*/
     {
-        path: '/2',
-        name: 'page2',
+        path: '/projets',
+        name: 'projets',
         components: {
-            central: Page2View,
+            central: ProjetsView,
             footer: FormulaireContact
         },
     },

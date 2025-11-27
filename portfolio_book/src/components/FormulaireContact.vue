@@ -1,81 +1,89 @@
 <template>
-    <v-card
-        color="black"
-        class="dirCol"
-    >
-      <v-card-text style="padding-block: 25px; color: white">
-        <h1>Pour me contacter : </h1>
-      </v-card-text>
+  <div
+      style="background-color: black"
+      class="dirCol"
+  >
+    <v-card-text style="padding-top: 40px; color: white">
+      <h1>Pour me contacter : </h1>
+    </v-card-text>
 
+    <v-container
+        fluid
+        style="padding-inline: 100px"
+        class="dirRow">
       <v-container
-      class="dirRow">
-        <v-container
           class="dirCol"
-          style="padding-block: 20px;">
+          style="padding-block: 20px; padding-inline: 100px;">
 
-          <div
-              class="dirRow">
-            <v-card-text
-                class="dirCol containHover">
-              <label style="padding-right: 20px" class="txt" for="nom">Nom :</label>
-              <input class="txt" type="text" id="nom" v-model="nom"/>
-            </v-card-text>
-            <v-card-text
-                class="dirCol containHover">
-              <label class="txt" for="prenom">Prénom :</label>
-              <input class="txt" type="text" id="prenom" v-model="prenom"/>
-            </v-card-text>
-          </div>
-
+        <div
+            class="dirRow">
           <v-card-text
               class="dirCol containHover">
-            <label class="txt" for="mail">Email :</label>
-            <input class="txt" type="email" id="mail" v-model="email"/>
+            <label style="padding-right: 20px" class="txt" for="nom">Nom :</label>
+            <input class="txt" type="text" id="nom" v-model="nom"/>
           </v-card-text>
           <v-card-text
               class="dirCol containHover">
-            <label class="txt" for="message">Message :</label>
-            <v-textarea color="white" class="txt" variant="outlined" v-model="msg" auto-grow counter="1000"></v-textarea>
+            <label class="txt" for="prenom">Prénom :</label>
+            <input class="txt" type="text" id="prenom" v-model="prenom"/>
           </v-card-text>
-          <v-card-text
-              class="dirCol">
-            <v-btn class="txt" color="black" @click="sendContact()">Envoyer</v-btn>
-          </v-card-text>
-        </v-container>
+        </div>
 
-        <v-container
-            class="dirCol align"
-            style="margin-top: 25px">
-          <div class="dirRow">
-            <a class="link" href="https://github.com/hboissel-iut90">
-              <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
-                <div class="txtLink">Github</div>
-                <div class="txtLink">hboissel-iut90</div>
-              </v-container>
-            </a>
-          </div>
-          <div class="dirRow">
-            <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
-              <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
-                <div class="txtLink">Email universitaire</div>
-                <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
-              </v-container>
-            </a>
-            <a class="link" href="mailto:harry.boisselot@gmail.com">
-              <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
-                <div class="txtLink">Email professionnelle</div>
-                <div class="txtLink">harry.boisselot@gmail.com</div>
-              </v-container>
-            </a>
-          </div>
-        </v-container>
-
+        <v-card-text
+            class="dirCol containHover">
+          <label class="txt" for="mail">Email :</label>
+          <input class="txt" type="email" id="mail" v-model="email"/>
+        </v-card-text>
+        <v-card-text
+            class="dirCol containHover">
+          <label class="txt" for="objet">Objet :</label>
+          <input class="txt" type="text" id="mail" v-model="objet"/>
+        </v-card-text>
+        <v-card-text
+            class="dirCol containHover">
+          <label class="txt" for="message">Message :</label>
+          <v-textarea color="white" class="txt" variant="outlined" v-model="msg" auto-grow counter="1000"></v-textarea>
+        </v-card-text>
+        <v-card-text
+            style="padding-inline: 300px"
+            class="dirCol">
+          <v-btn color="#111111" class="txt" @click="sendContact()">Envoyer</v-btn>
+        </v-card-text>
       </v-container>
 
-    </v-card>
+      <v-container
+          class="dirCol align"
+          style="margin-top: 25px">
+        <div class="dirRow">
+          <a class="link" href="https://github.com/hboissel-iut90">
+            <v-container class="txtLinkHover">
+              <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
+              <div class="txtLink">Github</div>
+              <div class="txtLink">hboissel-iut90</div>
+            </v-container>
+          </a>
+        </div>
+        <div class="dirRow">
+          <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
+            <v-container class="txtLinkHover">
+              <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
+              <div class="txtLink">Email universitaire</div>
+              <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
+            </v-container>
+          </a>
+          <a class="link" href="mailto:harry.boisselot@gmail.com">
+            <v-container class="txtLinkHover">
+              <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
+              <div class="txtLink">Email professionnelle</div>
+              <div class="txtLink">harry.boisselot@gmail.com</div>
+            </v-container>
+          </a>
+        </div>
+      </v-container>
+
+    </v-container>
+
+  </div>
 </template>
 
 <script>
@@ -88,11 +96,12 @@ export default {
       nom: "",
       prenom: "",
       email: "",
+      objet: "",
       msg: "",
     }
   },
   methods: {
-     ...mapActions(['registerContact']),
+    ...mapActions(['registerContact']),
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
@@ -103,6 +112,7 @@ export default {
         nom: this.nom,
         prenom: this.prenom,
         email: this.email,
+        objet: this.objet,
         msg: this.msg,
       };
 
@@ -111,6 +121,7 @@ export default {
       this.nom = "";
       this.prenom = "";
       this.email = "";
+      this.objet = "";
       this.msg = "";
     }
   },
@@ -155,7 +166,7 @@ export default {
   font-weight: bold;
   font-size: medium;
   font-family: "DejaVu Sans Mono", monospace;
-  color : white;
+  color: white;
   border: solid whitesmoke 2px;
 }
 

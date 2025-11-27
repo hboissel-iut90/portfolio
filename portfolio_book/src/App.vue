@@ -24,6 +24,12 @@
 
       <v-spacer></v-spacer>
 
+      <v-btn
+          dark
+          @click="goTo('/projets')"
+          style="margin-right: 20px">
+        PROJETS
+      </v-btn>
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
@@ -46,6 +52,7 @@
     </v-app-bar>
     <v-main style="margin-top: 10px">
       <router-view name="central"/>
+      <router-view name="apropos"/>
       <router-view name="footer"/>
     </v-main>
   </v-app>
@@ -62,8 +69,8 @@ export default {
     return {
       items: [
         { title: 'Accueil', link: '' },
+        { title: 'A Propos', link: 'apropos' },
         { title: 'Contexte', link: 'contexte' },
-        { title: 'Page 1', link: '1' },
         { title: 'Page 2', link: '2' },
         { title: 'Page 3', link: '3' }
       ]
@@ -77,20 +84,20 @@ export default {
       }
     },
   },
-  mounted() {
-    this.verifyPage();
-  }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DejaVu Sans Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: black;
-  background-image: url("@/assets/w.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("@/assets/blue-indigo.jpg");
 
 }
 </style>

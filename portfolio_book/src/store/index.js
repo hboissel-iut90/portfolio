@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    données: [],
+    data: [],
   },
   mutations: {
     /*
@@ -14,7 +14,7 @@ export default new Vuex.Store({
     },
      */
     setContact(state, data) {
-      state.données.push(data);
+      state.data.push(data);
     },
   },
   actions: {
