@@ -1,7 +1,8 @@
 <template>
     <div
-    style="background-color: transparent; border: solid black 1px; border-radius: 50px">
-      <v-container>
+    style="background-color: transparent">
+      <v-container
+          id="apropos">
         <h1>À propos</h1>
       </v-container>
       <v-container fluid
@@ -39,13 +40,13 @@
         </v-card-text>
       </v-container>
 
-      <!--v-container
+      <v-container
           style="margin-top: 30px"
-          @click="goTo('/apropos')">
+          @click="scrollingTo('formContact')">
         <h3>Retrouver mon CV dans mes contacts !</h3>
         <img class="logos2" alt="V" src="@/assets/w.jpg">
       </v-container>
-      < v-container>
+      <!--v-container>
         < v-card-text class="txt">
           <v-container class="txt" style="padding-inline: 60px">
             <ul>
@@ -71,6 +72,14 @@ export default {
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
+      }
+    },
+    scrollingTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
       }
     }
   },

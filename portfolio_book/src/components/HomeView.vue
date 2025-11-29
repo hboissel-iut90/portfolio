@@ -10,6 +10,8 @@
     </v-card-text>
     <v-img
         dark
+        @click="scrollingTo('apropos')"
+        style="cursor: pointer;"
     >
       V
     </v-img>
@@ -28,6 +30,14 @@ export default {
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
+      }
+    },
+    scrollingTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: elementPosition, behavior: 'smooth' });
       }
     }
   },
