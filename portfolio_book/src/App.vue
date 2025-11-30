@@ -51,6 +51,7 @@
 
     </v-app-bar>
     <v-main style="margin-top: 10px">
+      <router-view name="skills"/>
       <router-view name="central"/>
       <router-view name="apropos"/>
       <router-view name="footer"/>

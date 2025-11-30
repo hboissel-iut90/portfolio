@@ -8,13 +8,12 @@
       <h3 style="padding: 5px"><strong>Venez découvrir mon expérience professionnelle développée durant mon stage</strong></h3>
       <h3 style="padding: 5px"><strong>ou encore mes projets conçus mes études. </strong></h3>
     </v-card-text>
-    <v-img
-        dark
+    <v-container
         @click="scrollingTo('apropos')"
         style="cursor: pointer;"
     >
       V
-    </v-img>
+    </v-container>
     <v-card-text class="spaceEvl align" style="margin-top: 100px; padding-left: 130px">
     </v-card-text>
   </v-container>

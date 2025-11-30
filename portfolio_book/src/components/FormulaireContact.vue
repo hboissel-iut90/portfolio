@@ -53,35 +53,45 @@
       </v-container>
 
       <v-container
-          class="dirCol align"
-          style="margin-top: 25px">
-        <div class="dirRow">
-          <a class="link" href="https://github.com/hboissel-iut90">
-            <v-container class="txtLinkHover">
-              <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
-              <div class="txtLink">Github</div>
-              <div class="txtLink">hboissel-iut90</div>
-            </v-container>
-          </a>
-        </div>
-        <div class="dirRow">
-          <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
-            <v-container class="txtLinkHover">
-              <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
-              <div class="txtLink">Email universitaire</div>
-              <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
-            </v-container>
-          </a>
-          <a class="link" href="mailto:harry.boisselot@gmail.com">
-            <v-container class="txtLinkHover">
-              <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
-              <div class="txtLink">Email professionnelle</div>
-              <div class="txtLink">harry.boisselot@gmail.com</div>
-            </v-container>
-          </a>
-        </div>
-      </v-container>
+          style="margin-top: 25px"
+          class="spaceEvl dirCol">
+        <v-container
+            class="dirCol align">
+          <div class="dirRow">
+            <a class="link" href="https://github.com/hboissel-iut90">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
+                <div class="txtLink">Github</div>
+                <div class="txtLink">hboissel-iut90</div>
+              </v-container>
+            </a>
+          </div>
+          <div class="dirRow">
+            <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
+                <div class="txtLink">Email universitaire</div>
+                <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
+              </v-container>
+            </a>
+            <a class="link" href="mailto:harry.boisselot@gmail.com">
+              <v-container class="txtLinkHover">
+                <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
+                <div class="txtLink">Email professionnelle</div>
+                <div class="txtLink">harry.boisselot@gmail.com</div>
+              </v-container>
+            </a>
+          </div>
+        </v-container>
+        <v-container>
 
+          <a class="link" href="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" download>
+            <v-container>
+              <img class="img3" alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" />
+            </v-container>
+          </a>
+        </v-container>
+      </v-container>
     </v-container>
 
   </div>
@@ -130,37 +140,6 @@ export default {
 </script>
 
 <style scoped>
-.spaceBtw {
-  display: flex;
-  justify-content: space-between;
-}
-
-.spaceEvl {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.glued {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.dirCol {
-  display: flex;
-  flex-direction: column;
-}
-
-.dirRow {
-  display: flex;
-  flex-direction: row;
-}
-
 .txt {
   padding: 5px;
   text-align: center;
@@ -205,12 +184,8 @@ export default {
   border-radius: 20px;
 }
 
-.img {
-  max-width: 90%;
-}
-
-.img2 {
-  max-width: 50%;
+.img3 {
+  max-width: 25%;
 }
 
 .logos2 {

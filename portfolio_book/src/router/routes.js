@@ -4,7 +4,7 @@ import HomeView from "@/components/HomeView.vue";
 import ErrorDialog from "@/components/ErrorDialog.vue";
 import AProposView from "@/components/AProposView.vue";
 import ProjetsView from "@/components/ProjetsView.vue";
-import Page3View from "@/components/Page3View.vue";
+import SkillsView from "@/components/SkillsView.vue";
 import ContexteView from "@/components/ContexteView.vue";
 import FormulaireContact from "@/components/FormulaireContact.vue";
 
@@ -29,27 +29,12 @@ const routes = [
             footer: FormulaireContact
         },
     },
-    /*
-    {
-        path: '/apropos',
-        name: 'apropos',
-        components: {
-            footer: FormulaireContact
-        },
-    },*/
     {
         path: '/projets',
         name: 'projets',
         components: {
+            skills: SkillsView,
             central: ProjetsView,
-            footer: FormulaireContact
-        },
-    },
-    {
-        path: '/3',
-        name: 'page3',
-        components: {
-            central: Page3View,
             footer: FormulaireContact
         },
     },

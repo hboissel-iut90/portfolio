@@ -28,39 +28,13 @@
           </v-card-text>
         </v-container>
       </v-container>
-      <v-container
-          class="spaceBtw">
-        <v-card-text class="txt">
-          <p>
-          </p>
-          <p>
-          </p>
-          <p>
-          </p>
-        </v-card-text>
-      </v-container>
 
       <v-container
-          style="margin-top: 30px"
+          style="margin-top: 30px; cursor: pointer;"
           @click="scrollingTo('formContact')">
         <h3>Retrouver mon CV dans mes contacts !</h3>
-        <img class="logos2" alt="V" src="@/assets/w.jpg">
+        <v-container style="font-size: large; margin-top: 20px">V</v-container>
       </v-container>
-      <!--v-container>
-        < v-card-text class="txt">
-          <v-container class="txt" style="padding-inline: 60px">
-            <ul>
-              <li><h4>l’horodatage avec l’horloge interne du téléphone;</h4></li>
-              <br>
-              <li><h4>les axes d’accélération avec l’accéléromètre;</h4></li>
-              <br>
-              <li><h4>les vitesses de rotations avec le gyroscope;</h4></li>
-              <br>
-            </ul>
-          </v-container>
-        </v-card-text>
-      </v-container-->
-
   </div>
 </template>
 
@@ -85,6 +59,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>

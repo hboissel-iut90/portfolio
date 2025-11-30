@@ -5,7 +5,7 @@
       <h1>Mes projets</h1>
     </v-container>
     <v-container
-        class="spaceBtw">
+        class="spaceBtw projectSlot">
       <v-card-text class="logos2">
         <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
         <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -28,7 +28,7 @@
       </v-card-text>
     </v-container>
     <v-container
-        class="spaceBtw">
+        class="spaceBtw projectSlot">
       <v-card-text class="logos2">
         <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
         <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -51,7 +51,7 @@
       </v-card-text>
     </v-container>
     <v-container
-        class="spaceBtw">
+        class="spaceBtw projectSlot">
       <v-card-text class="logos2">
         <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
         <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -74,7 +74,7 @@
       </v-card-text>
     </v-container>
     <v-container
-        class="spaceBtw">
+        class="spaceBtw projectSlot">
       <v-card-text class="logos2">
         <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
         <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -125,4 +125,50 @@ export default {
 
 <style scoped>
 
+.projectSlot {
+  border: solid black 2px;
+  border-radius: 20px;
+  background-color: darkblue;
+}
+
+.txt {
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.containHover:hover * {
+  color: lightseagreen;
+  border: lightseagreen 2px solid;
+}
+
+::v-deep(.txt textarea) {
+  color: white !important;
+}
+
+.align {
+  align-items: center;
+}
+
+.img {
+  max-width: 90%;
+}
+
+.img2 {
+  max-width: 50%;
+}
+
+.logos2 {
+  max-width: 100px;
+  max-height: 30px;
+  border: solid darkslategray 0px;
+  border-radius: 0px;
+}
+
+.legImg {
+  align-items: center;
+  font-weight: bold;
+}
 </style>
