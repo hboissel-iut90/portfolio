@@ -1,5 +1,5 @@
 <template>
-  <v-container style="font-size: large;">
+  <v-container style="font-size: large; margin-block: 200px">
     <v-card-text style="margin-top: 100px;">
       <h1>Bienvenue sur le portfolio de Harry Boisselot.</h1>
     </v-card-text>
@@ -75,19 +75,34 @@ export default {
   flex-direction: row;
 }
 
+.align {
+  align-items: center;
+}
+
 .txt {
   text-align: justify;
   font-weight: bold;
   font-size: medium;
 }
 
+.txtLink {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.txtLinkHover:hover * {
+  color: lightseagreen !important;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .borderImg {
   border: solid darkslategray 2px;
   border-radius: 20px;
-}
-
-.align {
-  align-items: center;
 }
 
 .img {
@@ -98,22 +113,55 @@ export default {
   max-width: 50%;
 }
 
-.logosUniv1 {
-  max-height: 100px;
-  border-radius: 0px;
-  padding-left: 100px;
+.img2_5 {
+  max-width: 35%;
 }
 
-.logosUniv2 {
-  max-width: 400px;
+.img3 {
+  max-width: 25%;
+}
+
+.img4 {
+  max-width: 10%;
+}
+
+.logos {
+  max-width: 80px;
   max-height: 80px;
   border-radius: 0px;
+  object-fit: contain;
 }
 
-.logos2 {
-  max-width: 100px;
-  max-height: 30px;
-  border-radius: 0px;
+/* Écrans très petits (téléphones mobiles < 480px) */
+@media (max-width: 480px) {
+  .logos {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+/* Écrans petits à moyens (tablettes 480px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logos {
+    max-width: 65px;
+    max-height: 65px;
+  }
+}
+
+/* Écrans moyens à grands (desktop 769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logos {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
+/* Écrans très grands (desktop > 1024px) */
+@media (min-width: 1025px) {
+  .logos {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
 
 .legImg {

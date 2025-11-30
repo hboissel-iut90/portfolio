@@ -60,7 +60,7 @@
           <div class="dirRow">
             <a class="link" href="https://github.com/hboissel-iut90">
               <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/github_white.png">
+                <img class="logos" alt="Image not found" src="@/assets/github_white.png">
                 <div class="txtLink">Github</div>
                 <div class="txtLink">hboissel-iut90</div>
               </v-container>
@@ -69,14 +69,14 @@
           <div class="dirRow">
             <a class="link" href="mailto:harry.boisselot@edu.univ-fcomte.fr">
               <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/email_univ.png">
+                <img class="logos" alt="Image not found" src="@/assets/email_univ.png">
                 <div class="txtLink">Email universitaire</div>
                 <div class="txtLink">harry.boisselot@edu.univ-fcomte.fr</div>
               </v-container>
             </a>
             <a class="link" href="mailto:harry.boisselot@gmail.com">
               <v-container class="txtLinkHover">
-                <img class="logos2" alt="Image not found" src="@/assets/email_pro.png">
+                <img class="logos" alt="Image not found" src="@/assets/email_pro.png">
                 <div class="txtLink">Email professionnelle</div>
                 <div class="txtLink">harry.boisselot@gmail.com</div>
               </v-container>
@@ -84,10 +84,12 @@
           </div>
         </v-container>
         <v-container>
+          <h3>Mon CV</h3>
+          <div class="txtLink">Cliquer pour télécharger</div>
 
           <a class="link" href="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" download>
             <v-container>
-              <img class="img3" alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" />
+              <img class="img4" style alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" />
             </v-container>
           </a>
         </v-container>
@@ -159,22 +161,6 @@ export default {
   color: white !important;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-}
-
-.txtLink {
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  color: white;
-}
-
-.txtLinkHover:hover * {
-  color: lightseagreen !important;
-}
-
 .align {
   align-items: center;
 }
@@ -184,11 +170,7 @@ export default {
   border-radius: 20px;
 }
 
-.img3 {
-  max-width: 25%;
-}
-
-.logos2 {
+.logos {
   max-width: 100px;
   max-height: 30px;
   border: solid darkslategray 0px;

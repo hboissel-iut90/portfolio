@@ -8,7 +8,7 @@
       <v-container fluid
           class="spaceBtw">
         <v-card-text class="dirCol align legImg center">
-          <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
+          <img style="max-width: 35%; max-height: 90%" alt="Image not found" src="@/assets/Harry_BOISSELOT.png"/>
         </v-card-text>
         <v-container>
           <v-card-text>
@@ -21,9 +21,12 @@
             <p>
               Actuellement en études d'informatique en troisième année, mes connaissances en développement passe par la conception d'applications PC ou mobiles,
               de sites web ainsi que de l'intégration CI/CD.
-
             </p>
             <p>
+              Je pratique une veille informationnelle sur plusieurs articles de sites informatique et "new tech" comme
+              <a class="styleLink" href="https://www.clubic.com/">Clubic</a>,
+              <a class="styleLink" href="https://www.lemondeinformatique.fr/">LeMondeInformatique</a>, ou encore
+              <a class="styleLink" href="https://korben.info/">le site de Korben</a>.
             </p>
           </v-card-text>
         </v-container>
@@ -59,3 +62,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.styleLink {
+  text-align: justify;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.styleLink:hover {
+  color: lightseagreen !important;
+}
+</style>

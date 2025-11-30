@@ -1,16 +1,26 @@
 <template>
-    <v-card
-        style="border: black solid 2px; background-color: transparent"
-    >
-      <h1 class="">
-        Compétences
-      </h1>
+  <v-container>
+    <div style="margin-block: 50px">
       <v-container>
-        <v-card-text class="">
-          <p></p>
-        </v-card-text>
+        <h1>Compétences</h1>
       </v-container>
-    </v-card>
+      <v-container>
+        <h3>
+          Retrouver les langages de programmation, les technologies et les outils que je maîtrise.
+        </h3>
+      </v-container>
+      <v-card
+          style="border: black solid 2px; color: white; background-color: transparent"
+      >
+        <v-container>
+          <v-card-text>
+            <v-img class="logos" src="@/assets/github_white.png" alt="Image not found"/>
+            <p></p>
+          </v-card-text>
+        </v-container>
+      </v-card>
+    </div>
+  </v-container>
 </template>
 
 <script>
@@ -38,46 +48,6 @@ export default {
 </script>
 
 <style scoped>
-.spaceBtw {
-  display: flex;
-  justify-content: space-between;
-}
-
-.spaceEvl {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.glued {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.dirCol {
-  display: flex;
-  flex-direction: column;
-}
-
-.dirRow {
-  display: flex;
-  flex-direction: row;
-}
-
-.txt {
-  padding: 5px;
-  text-align: center;
-  font-weight: bold;
-  font-size: medium;
-  font-family: "DejaVu Sans Mono", monospace;
-  color: white;
-  border: solid whitesmoke 2px;
-}
 
 .containHover:hover * {
   color: lightseagreen;
@@ -119,13 +89,6 @@ export default {
 
 .img2 {
   max-width: 50%;
-}
-
-.logos2 {
-  max-width: 100px;
-  max-height: 30px;
-  border: solid darkslategray 0px;
-  border-radius: 0px;
 }
 
 .legImg {
