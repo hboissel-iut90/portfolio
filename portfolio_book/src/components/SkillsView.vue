@@ -60,11 +60,11 @@
               <p class="txtSkill">Ionic</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/c++.png" alt="Image not found"/>
+              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
               <p class="txtSkill">Quasar</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/c.png" alt="Image not found"/>
+              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
               <div class="txtSkill">Laravel</div>
               <p>En cours ...</p>
             </v-card-text>
@@ -72,20 +72,20 @@
           <h3>Outils</h3>
           <div class="dirRow">
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/java.png" alt="Image not found"/>
-              <p class="txtSkill">Java</p>
+              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <p class="txtSkill">JetBrains</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/python.png" alt="Image not found"/>
-              <p class="txtSkill">Python</p>
+              <v-img class="logos" src="@/assets/github_white.png" alt="Image not found"/>
+              <p class="txtSkill">Github</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/c++.png" alt="Image not found"/>
-              <p class="txtSkill">C++</p>
+              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <p class="txtSkill">Gitlab</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/c.png" alt="Image not found"/>
-              <p class="txtSkill">C</p>
+              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <p class="txtSkill">Docker</p>
             </v-card-text>
           </div>
         </v-container>
