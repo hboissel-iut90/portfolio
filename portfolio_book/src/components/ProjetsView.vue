@@ -54,11 +54,10 @@
         </v-card-text>
         <v-card-text class="txt">
           <p>
-            Cette mission intervient à la suite de la passation S8 à S20 et vient compléter les données de capteurs par
-            des données météorologiques ou de trafic routier.
-            Elle a pour idée de prendre des données à partir d’API (= Interface de Programmation d’Application) à partir
-            de requêtes en HTTP (= Protocole de Transfert HyperTexte)
-            pour les transformer en données exploitables et les ajouter dans le fichier.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </v-card-text>
       </v-container>
@@ -80,11 +79,10 @@
         </v-card-text>
         <v-card-text class="txt">
           <p>
-            Cette mission intervient à la suite de la passation S8 à S20 et vient compléter les données de capteurs par
-            des données météorologiques ou de trafic routier.
-            Elle a pour idée de prendre des données à partir d’API (= Interface de Programmation d’Application) à partir
-            de requêtes en HTTP (= Protocole de Transfert HyperTexte)
-            pour les transformer en données exploitables et les ajouter dans le fichier.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </v-card-text>
       </v-container>
@@ -106,11 +104,10 @@
         </v-card-text>
         <v-card-text class="txt">
           <p>
-            Cette mission intervient à la suite de la passation S8 à S20 et vient compléter les données de capteurs par
-            des données météorologiques ou de trafic routier.
-            Elle a pour idée de prendre des données à partir d’API (= Interface de Programmation d’Application) à partir
-            de requêtes en HTTP (= Protocole de Transfert HyperTexte)
-            pour les transformer en données exploitables et les ajouter dans le fichier.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </v-card-text>
       </v-container>
