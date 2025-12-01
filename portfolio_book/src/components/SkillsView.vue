@@ -13,6 +13,19 @@
           style="border: black solid 2px; color: white; background-color: transparent"
       >
         <v-container>
+          <h2>Hard Skills</h2>
+          <v-card-text>
+            <v-img class="logos" src="@/assets/github_white.png" alt="Image not found"/>
+            <p></p>
+          </v-card-text>
+        </v-container>
+        <v-container>
+          <v-card-text>
+            <v-img class="logos" src="@/assets/github_white.png" alt="Image not found"/>
+            <p></p>
+          </v-card-text>
+        </v-container>
+        <v-container>
           <v-card-text>
             <v-img class="logos" src="@/assets/github_white.png" alt="Image not found"/>
             <p></p>

@@ -87,9 +87,9 @@
           <h3>Mon CV</h3>
           <div class="txtLink">Cliquer pour télécharger</div>
 
-          <a class="link" href="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" download>
+          <a class="link" href="@/assets/CV_Stage_Harry_BOISSELOT.png" download>
             <v-container>
-              <img class="img4" style alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT_Info_web.png" />
+              <img class="img4" style alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT.png" />
             </v-container>
           </a>
         </v-container>
