@@ -87,7 +87,7 @@
           <h3>Mon CV</h3>
           <div class="txtLink">Cliquer pour télécharger</div>
 
-          <a class="link" href="@/assets/CV_Stage_Harry_BOISSELOT.png" download>
+          <a class="link" :href="cv" download="CV_Stage_Harry_BOISSELOT.pdf" target="_blank" rel="noopener" @click.prevent="downloadCv">
             <v-container>
               <img class="img4" style alt="Image not found" src="@/assets/CV_Stage_Harry_BOISSELOT.png" />
             </v-container>
@@ -111,10 +111,29 @@ export default {
       email: "",
       objet: "",
       msg: "",
+      cv: "/CV_Stage_Harry_BOISSELOT.pdf",
     }
   },
   methods: {
     ...mapActions(['registerContact']),
+    async downloadCv() {
+      try {
+        const resp = await fetch(this.cv, { cache: 'no-cache' });
+        if (!resp.ok) throw new Error('Network response was not ok');
+        const blob = await resp.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'CV_Stage_Harry_BOISSELOT.pdf';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
+      } catch (err) {
+        // fallback: ouvrir le pdf dans un nouvel onglet si fetch échoue
+        window.open(this.cv, '_blank', 'noopener');
+      }
+    },
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
