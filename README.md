@@ -5,7 +5,7 @@ Je suis étudiant en Informatique à Belfort - France.
 
 Ici vous retrouverez le code qui m'a servi à créer mes portfolios.
 
-Le portfolio de stage est actuellement en ligne : 
+Le portfolio - book est actuellement en ligne : 
 https://portfolio-hboisselot.netlify.app/
 
 ### Portfolio - Book
