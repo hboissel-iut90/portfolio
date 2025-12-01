@@ -61,7 +61,7 @@ export default {
 
 .glued {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -76,6 +76,7 @@ export default {
 }
 
 .align {
+  display: flex;
   align-items: center;
 }
 
@@ -105,8 +106,17 @@ export default {
   border-radius: 20px;
 }
 
+.legImg {
+  align-items: center;
+  font-weight: bold;
+}
+
 .img {
   max-width: 90%;
+}
+
+.img1_5 {
+  max-width: 70%;
 }
 
 .img2 {
@@ -162,10 +172,5 @@ export default {
     max-width: 100px;
     max-height: 100px;
   }
-}
-
-.legImg {
-  align-items: center;
-  font-weight: bold;
 }
 </style>

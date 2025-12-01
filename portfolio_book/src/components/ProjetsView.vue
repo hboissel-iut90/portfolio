@@ -2,38 +2,45 @@
   <div
       style="background-color: transparent;">
     <v-container>
-      <h1>Mes projets</h1>
+      <h1>Projets</h1>
+    </v-container>
+    <v-container class="dirRow">
+      <v-container v-for="proj in projetsLink" :key="proj.id" class="dirRow center">
+        <v-btn dark @click="scrollingTo(proj.id)">
+          {{ proj.name }}
+        </v-btn>
+      </v-container>
     </v-container>
 
-    <div style="margin-block: 20px">
+    <div class="projectCard">
       <v-container id="stage"
-          class="spaceBtw projectSlot">
-        <v-card-text class="logos">
-          <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
-          <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
-          <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
-          <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
-          <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
-          <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
-        </v-card-text>
-        <v-card-text class="dirCol align legImg center">
-          <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
-        </v-card-text>
-        <v-card-text class="txt">
-          <p>
-            Cette mission intervient à la suite de la passation S8 à S20 et vient compléter les données de capteurs par
-            des données météorologiques ou de trafic routier.
-            Elle a pour idée de prendre des données à partir d’API (= Interface de Programmation d’Application) à partir
-            de requêtes en HTTP (= Protocole de Transfert HyperTexte)
-            pour les transformer en données exploitables et les ajouter dans le fichier.
-          </p>
-        </v-card-text>
+                   class="dirCol projectSlot">
+        <h2>Stage du semestre 4 de mon BUT</h2>
+        <div class="dirRow">
+          <v-card-text class="logos">
+            <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
+            <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
+            <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
+            <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
+            <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
+            <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
+          </v-card-text>
+          <v-card-text class="align">
+            <img class="img2" alt="Image not found" src="@/assets/proto_support_s20.png"/>
+          </v-card-text>
+          <v-card-text class="txt">
+              Durée : 12 semaines <br/>
+              Lieu : Université Gustave Eiffel, Salon de Provence <br/><br/>
+              Sujet : Mise à jour d'une application mobile
+          </v-card-text>
+
+        </div>
       </v-container>
     </div>
 
-    <div style="margin-block: 20px">
+    <div class="projectCard">
       <v-container id="saecreepy"
-          class="spaceBtw projectSlot">
+                   class="spaceBtw projectSlot">
         <v-card-text class="logos">
           <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -42,7 +49,7 @@
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
-        <v-card-text class="dirCol align legImg center">
+        <v-card-text class="align">
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
         <v-card-text class="txt">
@@ -57,9 +64,9 @@
       </v-container>
     </div>
 
-    <div style="margin-block: 20px">
+    <div class="projectCard">
       <v-container id="saejeu"
-          class="spaceBtw projectSlot">
+                   class="spaceBtw projectSlot">
         <v-card-text class="logos">
           <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -68,7 +75,7 @@
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
-        <v-card-text class="dirCol align legImg center">
+        <v-card-text class="align">
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
         <v-card-text class="txt">
@@ -83,9 +90,9 @@
       </v-container>
     </div>
 
-    <div style="margin-block: 20px">
+    <div class="projectCard">
       <v-container id="saeagricole"
-          class="spaceBtw projectSlot">
+                   class="spaceBtw projectSlot">
         <v-card-text class="logos">
           <img class="img" alt="Image not found" src="@/assets/email_pro.png"/>
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
@@ -94,7 +101,7 @@
           <img class="img" alt="Image not found" src="@/assets/email_univ.png"/>
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
-        <v-card-text class="dirCol align legImg center">
+        <v-card-text class="align">
           <img class="img" alt="Image not found" src="@/assets/logo_iut2.png"/>
         </v-card-text>
         <v-card-text class="txt">
@@ -116,10 +123,28 @@
 
 export default {
   name: 'ProjetsView',
+  data() {
+    return {
+      projetsLink: [
+        {id: 'stage', name: 'Stage'},
+        {id: 'saecreepy', name: 'CreepyNight'},
+        {id: 'saejeu', name: 'Jeu de plateau'},
+        {id: 'saeagricole', name: 'FieldTrack'},
+      ],
+    };
+  },
   methods: {
     goTo(route) {
       if (this.$route.fullPath !== route) {
         this.$router.push(route);
+      }
+    },
+    scrollingTo(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 100;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({top: elementPosition, behavior: 'smooth'});
       }
     }
   },
@@ -131,12 +156,16 @@ export default {
 .projectSlot {
   border: solid black 2px;
   border-radius: 20px;
-  background-color: darkblue;
+  background-color: #000044;
+}
+
+.projectCard {
+  margin-block: 50px;
 }
 
 .txt {
   padding: 5px;
-  text-align: center;
+  text-align: justify;
   font-weight: bold;
   font-size: medium;
   color: white;
@@ -158,5 +187,38 @@ export default {
 .legImg {
   align-items: center;
   font-weight: bold;
+}
+
+.logos {
+  border-radius: 0px;
+  object-fit: contain;
+}
+
+/* Écrans très petits (téléphones mobiles < 480px) */
+@media (max-width: 480px) {
+  .logos {
+    max-width: 20%;
+  }
+}
+
+/* Écrans petits à moyens (tablettes 480px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logos {
+    max-width: 10%;
+  }
+}
+
+/* Écrans moyens à grands (desktop 769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logos {
+    max-width: 8%;
+  }
+}
+
+/* Écrans très grands (desktop > 1024px) */
+@media (min-width: 1025px) {
+  .logos {
+    max-width: 8%;
+  }
 }
 </style>
