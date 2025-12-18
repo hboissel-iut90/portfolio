@@ -48,6 +48,14 @@
               <v-img class="logos" src="@/assets/js.png" alt="Image not found"/>
               <p class="txtSkill">JavaScript</p>
             </v-card-text>
+            <v-card-text class="align dirCol">
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg" alt="Android"/>
+              <p class="txtSkill">Android</p>
+            </v-card-text>
+            <v-card-text class="align dirCol">
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin"/>
+              <p class="txtSkill">Kotlin</p>
+            </v-card-text>
           </div>
           <h3>Templates</h3>
           <div class="dirRow">
@@ -60,11 +68,11 @@
               <p class="txtSkill">Ionic</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/quasar/quasar-original.svg" alt="Quasar"/>
               <p class="txtSkill">Quasar</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel"/>
               <div class="txtSkill">Laravel</div>
               <p>En cours ...</p>
             </v-card-text>
@@ -72,7 +80,7 @@
           <h3>Outils</h3>
           <div class="dirRow">
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" alt="JetBrains"/>
               <p class="txtSkill">JetBrains</p>
             </v-card-text>
             <v-card-text class="align dirCol">
@@ -80,12 +88,31 @@
               <p class="txtSkill">Github</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="Gitlab"/>
               <p class="txtSkill">Gitlab</p>
             </v-card-text>
             <v-card-text class="align dirCol">
-              <v-img class="logos" src="@/assets/email_univ.png" alt="Image not found"/>
+              <v-img class="logos" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker"/>
               <p class="txtSkill">Docker</p>
+            </v-card-text>
+          </div>
+
+          <h2>Soft Skills</h2>
+          <div class="dirRow">
+            <v-card-text class="align dirCol">
+              <h3>Travail d'équipe</h3>
+            </v-card-text>
+            <v-card-text class="align dirCol">
+              <h3>Autonome</h3>
+            </v-card-text>
+            <v-card-text class="align dirCol">
+              <h3>Persévérant</h3>
+            </v-card-text>
+            <v-card-text class="align dirCol">
+              <h3>Sociable</h3>
+            </v-card-text>
+            <v-card-text class="align dirCol">
+              <h3>Curieux</h3>
             </v-card-text>
           </div>
         </v-container>
@@ -166,5 +193,18 @@ export default {
 .legImg {
   align-items: center;
   font-weight: bold;
+}
+
+.logos {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.logos-icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
