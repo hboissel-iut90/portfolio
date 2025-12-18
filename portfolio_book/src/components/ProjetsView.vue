@@ -29,10 +29,13 @@
           <v-card-text class="txt">
             Durée : 12 semaines <br/>
             Lieu : Université Gustave Eiffel, Salon de Provence <br/><br/>
-            Sujet : Mise à jour d'une application mobile <br/>
+            Sujet : Mise à niveau d'une application mobile <br/>
             Description : <br/>
-            Pendant ce stage, 3 missions m'ont été confiées. La première étape était de convertir une application compatible avec un samsung S7
-            vers une application compatible avec un Samsung S20. La seconde étape était de connecter l'application à une API de météo.
+            Le stage consistait à mettre à niveau les applications du laboratoire pour les rendre utilisable sur téléphone Samsung S20. <br>
+            3 missions m'ont été confiées. La première étape était de convertir une application compatible avec un Samsung S7
+            vers une application compatible avec un Samsung S20.<br>
+            La seconde étape consistait à chercher une API météo pour intégrer des données à l'application.<br>
+            La dernière étape était de produire une procédure de routage pour rendre le téléphone utilisable qu'avec les applications du laboratoire.
           </v-card-text>
 
         </v-container>
